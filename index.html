@@ -210,8 +210,7 @@
         <p>Portal Oficial del Proyecto Académico — Sistemas Engineering 2026.</p>
     </footer>
 
-    <!-- SCRIPT UNITY -->
- <!-- SCRIPT UNITY CORREGIDO CON RUTAS RELATIVAS -->
+  <!-- SCRIPT UNITY CORREGIDO PARA ARCHIVOS .BR -->
     <script>
       let canvas = document.querySelector("#unity-canvas");
       let fullscreenContainer = document.querySelector("#unity-fullscreen-container");
@@ -235,14 +234,14 @@
         updateBannerVisibility();
       }
 
-      var buildUrl = "./Build";
+      var buildUrl = "Build";
       var loaderUrl = buildUrl + "/web_game.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/web_game.data",
-        frameworkUrl: buildUrl + "/web_game.framework.js",
-        codeUrl: buildUrl + "/web_game.wasm",
-        streamingAssetsUrl: "./StreamingAssets",
+        dataUrl: buildUrl + "/web_game.data.br",
+        frameworkUrl: buildUrl + "/web_game.framework.js.br",
+        codeUrl: buildUrl + "/web_game.wasm.br",
+        streamingAssetsUrl: "StreamingAssets",
         fullscreenElementID: "unity-fullscreen-container",
         companyName: "DefaultCompany",
         productName: "Mi_Bolivia",
